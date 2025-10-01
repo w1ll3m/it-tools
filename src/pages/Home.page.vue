@@ -32,19 +32,11 @@ function onUpdateFavoriteTools() {
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.githubRepository')"
-          >GitHub</a>
-          {{ $t('home.follow.p2') }}
-          <a
-            href="https://x.com/ittoolsdottech"
-            rel="noopener"
-            target="_blank"
-            :aria-label="$t('home.follow.twitterXAccount')"
-          >X</a>.
+          >GitHub</a>.
           {{ $t('home.follow.thankYou') }}
           <n-icon :component="IconHeart" />
         </ColoredCard>
       </div>
-
       <transition name="height">
         <div v-if="toolStore.favoriteTools.length > 0">
           <h3 class="mb-5px mt-25px text-neutral-400 font-500">
